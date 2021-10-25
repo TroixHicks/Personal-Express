@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/d3cfcd7d11.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+
+  <header>
+    
+    <a class="home" href="">Home</a>
+    <a class="most" href="">Most Liked</a>
+
+  </header>
+  <body>
+    
+  <section class="main">
+
+
+    </section>
+   
+    <section class="container">
+      <h2> Upload your pictures here</h2>
+
+      <form action="/imageUpload" method="POST" enctype="multipart/form-data">
+        <div>
+          <label for="name">Image Title</label>
+          <input type="text" id="name" placeholder="Name" 
+                 value="" name="name" required>
+        </div>
+  
+        <div>
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" 
+                name="image" value="" required>
+        </div> 
+        
+        <button type="submit">upload</button>
+      </form>
+
+
+      <!-- <h1> Quote Tracker</h1> -->
+
+    </section>
+
+    <section class="contain">
+   
+
+
+   
+          
+          
+          
+    
+       
+      <h3> Pictures</h3>
+      <hr>
+      <ol class="quotes">
+        <% for(var i=0; i<quotes.length; i++) {%>
+          <li style="color:#<%= quotes[i].color %>">
+            
+            <span><%=quotes[i].name%></span>
+
+          
+
+          <% if(quotes[i].img){ %>
+
+            
+            
+          
+            <img class="image" src="data:image/<%=quotes[i].img.contentType%>;base64,
+                      <%=quotes[i].img.data.toString('base64')%>">
+
+                      
+          
+         <% } %>
+
+         
+            <span><i id="<%=quotes[i]._id%>" class="fa fa-trash" aria-hidden="true"></i></span>
+          </li>
+        <% } %>
+      </ol>
+
+    
+
+      
+    </section>
+
+    
+
+   
+    <script src="/main.js"></script>
+  </body>
+  </html>
+
+  
+</html>

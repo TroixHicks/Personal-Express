@@ -1,0 +1,114 @@
+body{
+    font-family: monospace;
+    background-image: url(picturebackground.jpeg);
+    background-size: cover;
+   
+}
+/* 
+.main{
+    border: 1px solid black;
+    height: 200px;
+    position: relative;
+    width: 70%;
+    float: left;
+    background-image: url(wallpaper.png);
+    background-image: cover;
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px whitesmoke;
+} */
+
+.container{
+    background-color: whitesmoke;
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    box-shadow: 12px 12px 2px 1px rgba(222, 143, 32, 0.479);
+    /* border-radius: 10px; */
+    
+   
+
+
+}
+
+
+ 
+ 
+ 
+
+
+.contain{
+    background-color: whitesmoke;
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    box-shadow: 12px 12px 2px 1px rgba(222, 143, 32, 0.479);
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    
+}
+
+button{
+    width: 90px;
+    padding: 10px 0;
+    border: 2.5px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(222, 143, 32, 0.479);
+}
+
+input{
+    padding: 7px;
+}
+
+h1,h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+hr{
+    height: 1px;
+    background-color: black;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width:30em;
+}
+
+header{
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    box-shadow: 12px 12px 2px 1px rgba(222, 143, 32, 0.479);
+    
+
+}
+
+.home{
+    position: relative;
+    left: 800px;
+    top: 20px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.most{
+    position: relative;
+    left: 850px;
+    top: 20px;
+    font-size: 20px;
+    font-family: monospace;
+
+
+}
+
